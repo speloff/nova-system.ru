@@ -18,7 +18,7 @@ $jq_loader->set('debug_output', true);
 
 if(isset($_SERVER['HTTP_HOST']) and $_SERVER['HTTP_HOST'] == 'jqgrid-php.net')
 {
-	$jq_loader->addInitQuery("SET NAMES 'utf8'");
+	$jq_loader->addInitQuery("SET NAMES 'windows-1251'");
 }
 
 $jq_loader->autorun();
