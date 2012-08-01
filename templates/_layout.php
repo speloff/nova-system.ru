@@ -5,7 +5,7 @@
 	<title>Таблицы</title>
 
 	<!--jQuery-->
-	<script src="/js/jquery.min.js"></script>
+	<script src="/js/jquery-1.7.2.min.js"></script>
 
 	<!--jQuery UI-->
 	<script src="/js/jquery-ui-1.8.22.custom.min.js"></script>
