@@ -6,7 +6,7 @@ $_CONFIG = array(
 
 	'encoding' => 'utf-8',
 
-	'pdo_dsn'  => 'mysql:dbname=jqgrid_test;host=127.0.0.1',
-	'pdo_user' => 'root',
-	'pdo_pass' => '',
+	'pdo_dsn'  => 'mysql:dbname=nova-system;host=127.0.0.1',
+	'pdo_user' => 'nova-system',
+	'pdo_pass' => 'nova-system',
 );
