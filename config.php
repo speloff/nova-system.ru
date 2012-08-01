@@ -2,7 +2,7 @@
 $lang = 'ru';
 
 $_CONFIG = array(
-	'root_path' => dirname(__FILE__) . '/../php/',
+	'root_path' => dirname(__FILE__) . '/php/',
 
 	'encoding' => 'utf-8',
 

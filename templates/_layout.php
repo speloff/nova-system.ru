@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Examples</title>
+	<title>Таблицы</title>
 
 	<!--jQuery-->
-	<script src="http://yandex.st/jquery/1.7.2/jquery.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
 
 	<!--jQuery UI-->
-	<script src="http://yandex.st/jquery-ui/1.8.11/jquery-ui.min.js"></script>
-	<link href="http://yandex.st/jquery-ui/1.8.11/themes/redmond/jquery.ui.all.min.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery-ui-1.8.22.custom.min.js"></script>
+	<link href="/css/custom-theme/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
 	
-	<script src="/jqgrid/plugins/ui.multiselect.js"></script>
-	<link href="/jqgrid/plugins/ui.multiselect.css" rel="stylesheet" type="text/css" />
+	<script src="/plugins/ui.multiselect.js"></script>
+	<link href="/plugins/ui.multiselect.css" rel="stylesheet" type="text/css" />
 
 	<!--jqGrid-->
-	<link href="/jqgrid/css/ui.jqgrid.css" rel="stylesheet" type="text/css" />
-	<script src="/jqgrid/js/i18n/grid.locale-en.js"></script>
-    <script src="/jqgrid/js/jquery.jqGrid.min.js"></script>
+	<link href="/css/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+	<script src="/js/i18n/grid.locale-ru.js"></script>
+    	<script src="/js/jquery.jqGrid.min.js"></script>
 
 	<!--jqGrid Extension-->
-	<link href="/client/jqgrid-ext.css" rel="stylesheet" type="text/css" />
-    <script src="/client/jqgrid-ext.js"></script>
+	<link href="/css/jqgrid-ext.css" rel="stylesheet" type="text/css" />
+    	<script src="/js/jqgrid-ext.js"></script>
 	
 	<!-- Other plugins -->
 	<script src="http://yandex.st/jquery/form/2.67/jquery.form.min.js"></script>
 	
 	<!-- Code highlighter -->
-	<script src="http://yandex.st/highlightjs/6.0/highlight.min.js"></script>
-	<link href="http://yandex.st/highlightjs/6.0/styles/vs.css" rel="stylesheet" type="text/css" />
+	<script src="/js/highlight.pack.js"></script>
+	<link href="/css/vs.css" rel="stylesheet" type="text/css" />
 	
 	<link rel="icon" href="misc/favicon.png" type="image/png"> 
 	
@@ -44,7 +44,7 @@
 		scrollOffset: 21,
 
 		width: 800,
-		height: 290
+		height: 600
 	});
 	
 	//$.jgrid.defaults.height = '400px';
