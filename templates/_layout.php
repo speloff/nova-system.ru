@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Таблицы</title>
 
 	<!--jQuery-->
@@ -23,7 +24,7 @@
     	<script src="/js/jqgrid-ext.js"></script>
 	
 	<!-- Other plugins -->
-	<script src="http://yandex.st/jquery/form/2.67/jquery.form.min.js"></script>
+	<script src="/js/jquery.form.min.js"></script>
 	
 	<!-- Code highlighter -->
 	<script src="/js/highlight.pack.js"></script>
