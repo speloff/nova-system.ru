@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Таблицы</title>
+	<title>Tables</title>
 
 	<!--jQuery-->
 	<script src="/js/jquery-1.7.2.min.js"></script>
