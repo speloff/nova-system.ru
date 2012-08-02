@@ -17,11 +17,3 @@ var opts = {
 
 <?= $rendered_grid ?>
 </script>
-	
-<div id="descr">
-	Subgrid as grid example.
-</div>
-
-<div id="descr_rus">
-	Пример таблицы в таблице. По просьбе с phpclub.ru.
-</div>
