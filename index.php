@@ -16,9 +16,9 @@ $jq_loader->set('pdo_pass', $_CONFIG['pdo_pass']);
 
 $jq_loader->set('debug_output', true);
 
-if(isset($_SERVER['HTTP_HOST']) and $_SERVER['HTTP_HOST'] == 'jqgrid-php.net')
+if(isset($_SERVER['HTTP_HOST']) and $_SERVER['HTTP_HOST'] == 'localhost')
 {
-	$jq_loader->addInitQuery("SET NAMES 'UTF-8'");
+	$jq_loader->addInitQuery("SET NAMES 'windows-1251'");
 }
 
 $jq_loader->autorun();
@@ -27,31 +27,10 @@ $jq_loader->autorun();
 // Get grid
 //-----------
 
-$grid = isset($_REQUEST['render']) ? $_REQUEST['render'] : 'jqSimple';
+$grid = isset($_REQUEST['render']) ? $_REQUEST['render'] : 'days';
 $grid = preg_replace('#[^a-zA-Z0-9_-]#', '', $grid); //safe
 
 //Most examples use simple grids without extra params
 $rendered_grid = $jq_loader->render($grid);
-
-//-----------
-// Get sources
-//-----------
-
-$source_php = file_get_contents('grids/' . $grid . '.php');
-
-if(file_exists('grids/' . $grid . '2.php'))
-{
-	$source_php2 = file_get_contents('grids/' . $grid . '2.php');
-}
-
-if(file_exists('grids/' . $grid . 'Details.php'))
-{
-	$source_php2 = file_get_contents('grids/' . $grid . 'Details.php');
-}
-
-$source_tpl = file_get_contents('templates/' . $grid . '.php');
-
-preg_match('#<script>(.+?)</script>#is', $source_tpl, $m);
-$source_js = trim($m[0]);
 
 require 'templates/_layout.php';
