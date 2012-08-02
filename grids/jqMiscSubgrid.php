@@ -1,6 +1,6 @@
 <?php
 
-class jqMiscSubgrid extends jqGrid
+class days extends jqGrid
 {
 	protected function init()
 	{
@@ -10,22 +10,22 @@ class jqMiscSubgrid extends jqGrid
 		#Set columns
 		$this->cols = array(
 			
-			'date'  	=>array('label' => 'Äàòà',
+			'date'  	=>array('label' => 'Ð”Ð°Ñ‚Ð°',
 								'width' => 25,
 								'align' => 'center',
 								),
 
-			'doctor'	=>array('label' => 'Âðà÷',
+			'doctor'	=>array('label' => 'Ð’Ñ€Ð°Ñ‡',
 								'width'	=> 35,
 								'editable' => true,
 								),
 
-			'clinic'	=>array('label' => 'Êëèíèêà',
+			'clinic'	=>array('label' => 'ÐšÐ»Ð¸Ð½Ð¸ÐºÐ°',
 								'width' => 35,
 								'editable' => true,
 								),
 
-			'time'		=>array('label' => 'Âðåìÿ ïðè¸ìà',
+			'time'		=>array('label' => 'Ð’Ñ€ÐµÐ¼Ñ Ð¿Ñ€Ð¸Ñ‘Ð¼Ð°',
 								'width' => 25,
 								'editable' => true,
 								),
@@ -35,7 +35,7 @@ class jqMiscSubgrid extends jqGrid
 	
 	protected function opRenderSubgrid()
 	{
-		echo $this->loader->render('jqMiscSubgrid2', array('customer_id' => $this->input('customer_id')));
+		echo $this->loader->render('clients', array('customer_id' => $this->input('customer_id')));
 		exit;
 	}
 	
