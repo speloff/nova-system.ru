@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-require 'sections.php';
+#require 'sections.php';
 
 header("Content-Type: text/html; charset={$_CONFIG['encoding']};");
 
@@ -16,7 +16,7 @@ $jq_loader->set('pdo_pass', $_CONFIG['pdo_pass']);
 
 $jq_loader->set('debug_output', true);
 
-if(isset($_SERVER['HTTP_HOST']) and $_SERVER['HTTP_HOST'] == 'jqgrid-php.net')
+if(isset($_SERVER['HTTP_HOST']) and $_SERVER['HTTP_HOST'] == 'localhost')
 {
 	$jq_loader->addInitQuery("SET NAMES 'UTF-8'");
 }
@@ -27,7 +27,7 @@ $jq_loader->autorun();
 // Get grid
 //-----------
 
-$grid = isset($_REQUEST['render']) ? $_REQUEST['render'] : 'jqSimple';
+$grid = isset($_REQUEST['render']) ? $_REQUEST['render'] : 'days';
 $grid = preg_replace('#[^a-zA-Z0-9_-]#', '', $grid); //safe
 
 //Most examples use simple grids without extra params

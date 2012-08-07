@@ -104,7 +104,7 @@
 		<td width="260px" valign="top"><?php require 'templates' . DIRECTORY_SEPARATOR . '_accordion.php'; ?></td>
 		<td valign="top" style="padding-left: 10px;">
 			<?php require 'templates' . DIRECTORY_SEPARATOR . $grid . '.php'; ?>
-			<?php require 'templates' . DIRECTORY_SEPARATOR . '_sources.php'; ?>
+			#<?php require 'templates' . DIRECTORY_SEPARATOR . '_sources.php'; ?>
 		</td>
 	</tr>
 	</table>
